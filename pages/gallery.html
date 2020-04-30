@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Realistic | Full Width</title>
+<title>Realistic | Gallery</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
 <script type="text/javascript" src="../layout/scripts/jquery.min.js"></script>
@@ -21,6 +21,28 @@ jQuery(function () {
 });
 </script>
 <!-- / Superfish Menu -->
+<!-- FancyBox -->
+<link rel="stylesheet" href="../layout/scripts/fancybox-2.1.5/jquery.fancybox.css" type="text/css" />
+<script type="text/javascript" src="../layout/scripts/fancybox-2.1.5/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[rel=gallery_group]").fancybox({
+        openEffect: 'elastic',
+        closeEffect: 'elastic',
+        openSpeed: 600,
+        closeSpeed: 600,
+        helpers: {
+            overlay: {
+                closeClick: true,
+            },
+            title: {
+                type: 'over'
+            }
+        }
+    });
+});
+</script>
+<!-- End FancyBox -->
 </head>
 <body id="top">
 <div class="wrapper">
@@ -51,7 +73,7 @@ jQuery(function () {
     <ul class="nav">
       <li><a href="../index.html">Homepage</a></li>
       <li><a href="style-demo.html">Style Demo</a></li>
-      <li class="active"><a href="full-width.html">Full Width</a></li>
+      <li><a href="full-width.html">Full Width</a></li>
       <li><a href="#">DropDown</a>
         <ul>
           <li><a href="#">menu item</a></li>
@@ -76,7 +98,7 @@ jQuery(function () {
         </ul>
       </li>
       <li><a href="portfolio.html">Portfolio</a></li>
-      <li class="last"><a href="gallery.html">Gallery</a></li>
+      <li class="last active"><a href="gallery.html">Gallery</a></li>
     </ul>
     <div class="clear"></div>
   </div>
@@ -99,35 +121,24 @@ jQuery(function () {
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper">
-  <div class="container">
-    <div class="whitebox"> 
-      <!-- ####################################################################################################### -->
-      <h1>Headline 1 Colour and Size</h1>
-      <h2>Headline 2 Colour and Size</h2>
-      <h3>Headline 3 Colour and Size</h3>
-      <h4>Headline 4 Colour and Size</h4>
-      <h5>Headline 5 Colour and Size</h5>
-      <h6>Headline 6 Colour and Size</h6>
-      <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>.</p>
-      <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
+  <div class="container"> 
+    <!-- ############################# -->
+    <div id="gallery" class="whitebox">
       <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Etiam vel sapien et est adipiscing commodo.</li>
-        <li>Duis pharetra eleifend sapien, id faucibus dolor rutrum et.</li>
-        <li>Donec et dui dolor, in lacinia leo.</li>
-        <li>Mauris posuere tellus ac purus adipiscing dapibus.</li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 1"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 2"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 3"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 4"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 5"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 6"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 7"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 8"><img src="../images/demo/260x130.gif" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="../images/demo/470x470.gif" title="Image 9"><img src="../images/demo/260x130.gif" alt="" /></a></li>
       </ul>
-      <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet condimentumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet nibh fames nulla curabitudin.</p>
-      <ol>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Etiam vel sapien et est adipiscing commodo.</li>
-        <li>Duis pharetra eleifend sapien, id faucibus dolor rutrum et.</li>
-        <li>Donec et dui dolor, in lacinia leo.</li>
-        <li>Mauris posuere tellus ac purus adipiscing dapibus.</li>
-      </ol>
-      <!-- ####################################################################################################### -->
-      <div class="clear"></div>
+      <br class="clear" />
     </div>
+    <!-- ############################# -->
+    <div class="clear"></div>
   </div>
 </div>
 <!-- ####################################################################################################### -->
